@@ -1,4 +1,6 @@
 import { useRef, useState } from 'react';
+import Footer from './Footer';
+
 
 function App() {
   const jitsiRef = useRef(null);
@@ -71,7 +73,22 @@ function App() {
           borderRadius: '10px',
         }}
       ></div>
+     <div
+          id="meet"
+          ref={jitsiRef}
+          style={{
+          marginTop: '2rem',
+          height: '80vh',
+          width: '100%',
+          border: '2px solid #ddd',
+          borderRadius: '10px',
+       }}
+       ></div>
+
+<Footer />
+
     </div>
+  
   );
 }
 
